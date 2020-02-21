@@ -1,0 +1,55 @@
+<!-- Main Sidebar Container -->
+<aside class="main-sidebar sidebar-dark-primary elevation-4"
+       *ngIf="true">
+  <div class="headline">
+  <span class="sidebar-toggle">
+    <!--<a [burger]="leftSideMenuService.isOpen" (click)="leftSideMenuService.toggle()"><i class="fa fa-bars"></i></a>-->
+  </span>
+    <a [routerLink]="" class="brand-link">
+      <span class="brand-text font-weight-light">Abbott Memorandum</span>
+    </a>
+  </div>
+
+  <div class="sidebar">
+    <nav class="mt-2">
+      <div class="title-menu">Меню</div>
+      <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+        <li>111</li>
+        <li>222</li>
+        <!--<li class="nav-item"
+            *ngFor="let item of menu;">
+          <a [routerLink]=""
+             [ngClass]="{
+                'nav-link-active' : item.showMenu,
+                'nav-link-hover' : item.active
+              }"
+             (click)="clickItem(item); go(item, item)"
+             class="nav-link">
+            <i  [ngClass]="item.icon"
+                class="fas nav-icon"></i>
+            <p>
+              {{item.title}}
+              <i *ngIf="item.menu && item.menu.length"
+                 [class.fa-angle-right]="!item.showMenu"
+                 class="fas fa-angle-left right"></i>
+            </p>
+          </a>
+          <ul class="nav nav-treeview"
+              [class.d-flex]="item.showMenu"
+              *ngIf="item.menu && item.menu.length">
+            <li class="nav-item w-100"
+                *ngFor="let itemMenu of item.menu;">
+              <a [routerLink]=""
+                 (click)="go(itemMenu, item)"
+                 class="nav-link">
+                <i  [ngClass]="item.icon"
+                    class="fas nav-icon"></i>
+                <p [innerText]="itemMenu.title"></p>
+              </a>
+            </li>
+          </ul>
+        </li>-->
+      </ul>
+    </nav>
+  </div>
+</aside>

@@ -1,0 +1,70 @@
+$headerHeight: 57px;
+
+header{
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 10;
+  background: white;
+  border-bottom: 1px solid #dee2e6;
+
+  .user-panel{
+    width: 200px;
+    height: $headerHeight;
+    align-items: center;
+
+    .info {
+      display: inline-block;
+      padding: 5px 5px 5px 10px;
+      overflow: hidden;
+      white-space: nowrap;
+      margin-left: 25px;
+      a{
+        color: #212529;
+      }
+    }
+
+    .image{
+      border-radius: 100%;
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  .user-sub{
+    .nav-link{
+      i{
+        align-items: center;
+        margin-right: 15px;
+      }
+      *{
+        display: flex;
+      }
+    }
+  }
+
+  nav{
+    align-items: center;
+    justify-content: space-between;
+    height: $headerHeight;
+
+    .nav-notification-item{
+      &>.nav-link{
+        padding-right: 1rem;
+        padding-left: 1rem;
+
+        display: flex;
+        align-items: center;
+        height: 100%;
+      }
+    }
+  }
+}
+
+.navbar-expand {
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}

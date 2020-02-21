@@ -1,0 +1,8 @@
+@import url(../../../node_modules/@ng-select/ng-select/themes/default.theme.css);
+.frame-layout {
+  height: 100vh; }
+
+.container-fluid {
+  padding-right: 0; }
+
+/*# sourceMappingURL=layout.component.css.map */
